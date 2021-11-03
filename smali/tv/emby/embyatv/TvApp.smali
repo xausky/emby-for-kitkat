@@ -2064,7 +2064,7 @@
     if-eqz v0, :cond_0
 
     .line 1057
-    invoke-virtual {v0}, Landroid/os/PowerManager;->isInteractive()Z
+    invoke-virtual {v0}, Landroid/os/PowerManager;->isScreenOn()Z
 
     move-result v0
 
