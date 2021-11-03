@@ -12,7 +12,7 @@
 
 .field private logger:Lmediabrowser/model/logging/ILogger;
 
-.field private mMediaSession:Landroid/media/session/MediaSession;
+.field private mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
 
 # direct methods
@@ -951,15 +951,15 @@
 
     .line 114
     :goto_0
-    new-instance p1, Landroid/media/session/MediaSession;
+    new-instance p1, Landroid/support/v4/media/session/MediaSessionCompat;
 
     invoke-virtual {p0}, Ltv/emby/embyatv/startup/StartupActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p1, p0, v0}, Landroid/media/session/MediaSession;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {p1, p0, v0}, Landroid/support/v4/media/session/MediaSessionCompat;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iput-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
     .line 115
     new-instance p1, Landroid/content/Intent;
@@ -976,14 +976,14 @@
     move-result-object p1
 
     .line 117
-    new-instance v0, Landroid/media/session/PlaybackState$Builder;
+    new-instance v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
 
-    invoke-direct {v0}, Landroid/media/session/PlaybackState$Builder;-><init>()V
+    invoke-direct {v0}, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;-><init>()V
 
     const-wide/16 v3, 0x277
 
     .line 118
-    invoke-virtual {v0, v3, v4}, Landroid/media/session/PlaybackState$Builder;->setActions(J)Landroid/media/session/PlaybackState$Builder;
+    invoke-virtual {v0, v3, v4}, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->setActions(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
 
     move-result-object v5
 
@@ -998,29 +998,29 @@
 
     move-result-wide v10
 
-    invoke-virtual/range {v5 .. v11}, Landroid/media/session/PlaybackState$Builder;->setState(IJFJ)Landroid/media/session/PlaybackState$Builder;
+    invoke-virtual/range {v5 .. v11}, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->setState(IJFJ)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
 
     move-result-object v0
 
     .line 120
-    invoke-virtual {v0}, Landroid/media/session/PlaybackState$Builder;->build()Landroid/media/session/PlaybackState;
+    invoke-virtual {v0}, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->build()Landroid/support/v4/media/session/PlaybackStateCompat;
 
     move-result-object v0
 
     .line 121
-    iget-object v1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iget-object v1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
-    invoke-virtual {v1, p1}, Landroid/media/session/MediaSession;->setMediaButtonReceiver(Landroid/app/PendingIntent;)V
+    invoke-virtual {v1, p1}, Landroid/support/v4/media/session/MediaSessionCompat;->setMediaButtonReceiver(Landroid/app/PendingIntent;)V
 
     .line 122
-    iget-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iget-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
-    invoke-virtual {p1, v0}, Landroid/media/session/MediaSession;->setPlaybackState(Landroid/media/session/PlaybackState;)V
+    invoke-virtual {p1, v0}, Landroid/support/v4/media/session/MediaSessionCompat;->setPlaybackState(Landroid/support/v4/media/session/PlaybackStateCompat;)V
 
     .line 123
-    iget-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iget-object p1, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
-    invoke-virtual {p1, v2}, Landroid/media/session/MediaSession;->setActive(Z)V
+    invoke-virtual {p1, v2}, Landroid/support/v4/media/session/MediaSessionCompat;->setActive(Z)V
 
     return-void
 .end method
@@ -1032,13 +1032,13 @@
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     .line 129
-    iget-object v0, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iget-object v0, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/media/session/MediaSession;
+    iget-object v0, p0, Ltv/emby/embyatv/startup/StartupActivity;->mMediaSession:Landroid/support/v4/media/session/MediaSessionCompat;
 
-    invoke-virtual {v0}, Landroid/media/session/MediaSession;->release()V
+    invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat;->release()V
 
     :cond_0
     return-void
