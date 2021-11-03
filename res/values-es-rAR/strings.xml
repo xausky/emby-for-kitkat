@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LabelYear">Year:</string>
+    <string name="NewCollectionNameExample">Ejemplo: Colección de Star Wars</string>
+    <string name="ParentalRating">Parental Rating</string>
+</resources>

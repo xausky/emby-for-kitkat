@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dark_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:textColor="@android:color/holo_blue_light" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="Add To Playlist" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@android:color/white" android:id="@id/okButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="90.0dip" android:text="@string/btn_ok" />
+        <Button android:textColor="@android:color/white" android:id="@id/cancelButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="90.0dip" android:text="@string/btn_cancel" />
+    </LinearLayout>
+    <Spinner android:id="@id/playlists" android:background="@drawable/emby_button" android:focusable="true" android:layout_width="340.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:spinnerMode="dialog" />
+    <RelativeLayout android:id="@id/nameFields" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/playlists" android:layout_centerHorizontal="true">
+        <TextView android:textStyle="bold" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/lbl_name" android:layout_alignLeft="@id/newName" />
+        <EditText android:textStyle="bold" android:id="@id/newName" android:layout_width="340.0dip" android:layout_height="wrap_content" android:layout_below="@id/textView11" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

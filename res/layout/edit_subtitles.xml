@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:id="@id/mainTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/HeaderEditSubtitles" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/itemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_below="@id/mainTitle" android:layout_centerHorizontal="true" android:alpha="0.64" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/itemName">
+        <LinearLayout android:orientation="vertical" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/MySubtitles" />
+            <TextView android:textSize="18.0sp" android:id="@id/currentSubsNone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="@string/lbl_none" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/currentSubs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="450.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/SearchForSubtitles" />
+            <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/LabelLanguage" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip">
+                <Spinner android:id="@id/languageOptions" android:background="@drawable/emby_button" android:focusable="true" android:layout_width="350.0dip" android:layout_height="28.0dip" android:spinnerMode="dialog" />
+                <view android:id="@id/search_button" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/search2" android:scaleType="fitXY" class="tv.emby.embyatv.ui.ImageButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <CheckBox android:id="@id/requireHash" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="@string/RequireHashMatch" />
+                <CheckBox android:id="@id/forcedOnly" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/OnlyForcedSubtitles" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:id="@id/resultsNone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="@string/NoSubtitleSearchResultsFound" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/searchResults" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

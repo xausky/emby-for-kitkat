@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/trash" android:id="@id/delete" android:title="@string/lbl_delete" />
+    <item android:icon="@drawable/whiteheart" android:id="@id/addFav" android:title="@string/lbl_add_favorite" />
+    <item android:icon="@drawable/redheart" android:id="@id/remFav" android:title="@string/lbl_remove_favorite" />
+    <item android:icon="@drawable/addtoqueue" android:id="@id/addQueue" android:title="@string/lbl_add_to_queue" />
+    <item android:icon="@drawable/tvicon" android:id="@id/gotoSeries" android:title="@string/lbl_goto_series" />
+    <item android:icon="@drawable/shuffle" android:id="@id/refresh" android:title="@string/lbl_refresh" />
+    <item android:icon="@drawable/addtoqueue" android:id="@id/addtoplaylist" android:title="@string/AddToPlaylist" />
+    <item android:icon="@drawable/edit" android:id="@id/editsubtitles" android:title="@string/HeaderEditSubtitles" />
+</menu>

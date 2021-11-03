@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dark_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:textColor="@android:color/holo_blue_light" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="20.0sp" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/timeline" android:layout_width="fill_parent" android:layout_height="25.0sp" android:divider="@drawable/blank10x10" android:layout_below="@id/title" android:showDividers="middle" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0sp" android:layout_alignParentBottom="true">
+        <Button android:textColor="@android:color/white" android:id="@id/okButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="10.0sp" android:minWidth="90.0dip" android:text="@string/lbl_save" />
+        <Button android:textColor="@android:color/white" android:id="@id/cancelButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0sp" android:minWidth="90.0dip" android:text="@string/lbl_cancel" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/blank30x30" android:layout_below="@id/timeline" android:layout_centerHorizontal="true" android:showDividers="middle">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:padding="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_blue_light" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_marginBottom="10.0sp" android:text="@string/lbl_begin_padding" android:layout_alignParentTop="true" />
+            <Spinner android:id="@id/prePadding" android:background="@drawable/emby_button" android:layout_width="140.0dip" android:layout_height="25.0sp" android:layout_marginLeft="5.0dip" android:layout_below="@id/textView1" android:spinnerMode="dialog" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:padding="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_blue_light" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_marginBottom="10.0sp" android:text="@string/lbl_end_padding" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <Spinner android:id="@id/postPadding" android:background="@drawable/emby_button" android:layout_width="140.0sp" android:layout_height="25.0sp" android:layout_below="@id/textView2" android:spinnerMode="dialog" android:layout_marginStart="5.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/seriesOptions" android:paddingTop="10.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/linearLayout">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_blue_light" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_repeat_options" />
+        <LinearLayout android:orientation="vertical" android:id="@id/repeatOptions" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textView12">
+            <CheckBox android:textSize="16.0sp" android:id="@id/onlyNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_only_new_episodes" />
+            <CheckBox android:textSize="16.0sp" android:id="@id/skipExisting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_skip_existing" />
+            <CheckBox android:textSize="16.0sp" android:id="@id/anyTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_record_any_time" />
+            <CheckBox android:textSize="16.0sp" android:id="@id/anyChannel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_record_any_channel" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/holo_blue_light" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/lbl_keep_up_to" />
+            <Spinner android:id="@id/keep" android:background="@drawable/emby_button" android:layout_width="200.0dip" android:layout_height="25.0sp" android:layout_marginTop="5.0dip" android:spinnerMode="dialog" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

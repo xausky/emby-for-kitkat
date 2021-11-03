@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/light_border" android:padding="4.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/friendlyName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" android:layout_below="@id/friendlyName" android:layout_alignParentStart="true" />
+</RelativeLayout>

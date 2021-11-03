@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="22.0sp" android:id="@id/btnDecrease" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" style="?android:buttonStyleSmall" />
+    <Button android:textSize="22.0sp" android:id="@id/btnIncrease" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" style="?android:buttonStyleSmall" />
+    <TextView android:textSize="22.0sp" android:gravity="right" android:id="@id/txtValue" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:text="0" />
+</LinearLayout>

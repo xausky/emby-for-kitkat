@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.emby.embyatv.ui.BackgroundFrame android:id="@id/backdrop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/rowsFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="false" />
+    <tv.emby.embyatv.ui.ClockUserView android:id="@id/fdClock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="false" android:alpha="0.8" android:layout_marginEnd="25.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

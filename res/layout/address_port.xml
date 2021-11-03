@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/serverAddress" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:hint="@string/lbl_ip_hint" android:ems="10" android:layout_alignParentTop="true" android:inputType="textUri" android:imeOptions="actionNext" android:layout_marginStart="36.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textSize="18.0dip" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Port:" android:layout_below="@id/serverAddress" android:layout_alignStart="@id/serverAddress" />
+    <EditText android:id="@id/serverPort" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="8096" android:ems="10" android:layout_below="@id/serverAddress" android:inputType="number" android:imeOptions="actionDone" android:layout_alignEnd="@id/serverAddress" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/lb_default_brand_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/infoLayout1" android:background="@color/background_material_dark" android:padding="10.0dip" android:layout_width="170.0dip" android:layout_height="180.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/infoCardTitle" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0sp" android:layout_below="@id/infoLayout1" android:layout_alignLeft="@id/infoLayout1" android:layout_alignRight="@id/infoLayout1" android:layout_alignParentTop="false" android:layout_alignParentStart="false" />
+</RelativeLayout>

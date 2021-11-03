@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black_transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/playback_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="190.0dip">
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/playback_info_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/playback_info_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/streaming_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/streaming_info_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/streaming_info_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/original_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/original_info_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/original_info_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

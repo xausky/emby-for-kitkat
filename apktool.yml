@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: Emby.for.Android.TV.1.8.29g.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- wav
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '1829'
+  versionName: 1.8.29g

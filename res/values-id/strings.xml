@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LabelContentType">Tipe konten:</string>
+    <string name="LabelCountry">Negara:</string>
+    <string name="LabelEnterConnectUserNameHelp">Ini adalah username atau email akun online Emby Anda.</string>
+    <string name="LabelLanguage">Bahasa:</string>
+    <string name="LabelYear">Year:</string>
+    <string name="ParentalRating">Parental Rating</string>
+</resources>

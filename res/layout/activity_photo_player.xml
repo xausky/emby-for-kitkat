@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mainImage2" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/mainImage" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/popupArea" android:background="@color/black_opaque" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:id="@id/rows_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/play_icon" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip" android:src="@drawable/round_play_circle_outline_white_48" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/NextImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <ImageView android:id="@id/PrevImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+</RelativeLayout>

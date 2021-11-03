@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backdrop_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.emby.embyatv.ui.BackgroundFrame android:id="@id/backdrop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/gridArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="110.0dip">
+        <ScrollView android:id="@id/jumpScroller" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_marginStart="18.0dip" android:layout_alignParentStart="true">
+            <tv.emby.embyatv.ui.JumpList android:gravity="center" android:orientation="vertical" android:id="@id/jumpList" android:layout_width="14.0dip" android:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/toolBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentTop="true" android:alpha="0.75" android:showDividers="middle" android:dividerPadding="4.0dip" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/rowsFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_marginStart="30.0dip" android:layout_marginEnd="50.0dip" />
+        <TextView android:textSize="12.0sp" android:id="@id/counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="0 | 0" android:layout_alignParentBottom="true" android:textAlignment="viewEnd" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/rightFocusTrap" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="10.0dip" android:layout_height="50.0dip" android:layout_alignTop="@id/gridArea" android:layout_alignParentEnd="true" />
+    <TextView android:id="@id/leftFocusTrap" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_alignTop="@id/gridArea" android:layout_alignBottom="@id/gridArea" android:layout_alignParentStart="true" />
+    <FrameLayout android:id="@id/spinner" android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="70.0dip" android:alpha="0.6" />
+    </FrameLayout>
+    <TextView android:textSize="26.0sp" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="65.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/infoRow" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/title" android:layout_alignStart="@id/title" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dark_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:textColor="@android:color/holo_blue_light" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="@string/lbl_filters" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0sp" android:layout_marginBottom="10.0sp" android:divider="@drawable/blank10x10" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:showDividers="middle">
+        <Button android:textColor="@android:color/white" android:id="@id/okButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/btn_filter" />
+        <Button android:textColor="@android:color/white" android:id="@id/clearButton" android:background="@drawable/emby_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/btn_clear_all" />
+    </LinearLayout>
+    <CheckBox android:id="@id/movies" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0sp" android:text="Movies" android:layout_below="@id/textView13" android:layout_alignLeft="@id/premiere" />
+    <CheckBox android:id="@id/series" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Series" android:layout_below="@id/movies" android:layout_alignLeft="@id/premiere" />
+    <CheckBox android:id="@id/news" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="News" android:layout_below="@id/series" android:layout_alignLeft="@id/premiere" />
+    <CheckBox android:id="@id/kids" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kids" android:layout_below="@id/news" android:layout_alignLeft="@id/premiere" />
+    <CheckBox android:id="@id/sports" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sports" android:layout_below="@id/kids" android:layout_alignLeft="@id/premiere" />
+    <CheckBox android:id="@id/premiere" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0sp" android:text="New Only" android:layout_below="@id/sports" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fr.bmartel.youtubetv.YoutubeTvView android:id="@id/youtube_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom|center" android:id="@id/bottomPanelMin" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="195.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="105.0dip" android:src="@drawable/bottom_fade_max" android:layout_alignParentBottom="true" />
+        <view android:id="@id/playPauseBtnMin" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="105.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/lb_ic_pause" android:layout_alignBottom="@id/playerProgressMin" class="tv.emby.embyatv.ui.ImageButton" />
+        <tv.emby.embyatv.ui.InteractiveProgressBar android:id="@id/playerProgressMin" android:clipChildren="false" android:layout_width="785.0dip" android:layout_height="wrap_content" android:layout_marginLeft="130.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0dip" android:id="@id/currentPosMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="16.0dip" android:text="0:00" android:maxLines="1" android:layout_toRightOf="@id/playPauseBtnMin" android:layout_alignBottom="@id/playerProgressMin" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0dip" android:id="@id/remainingTimeMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-50.0dip" android:text="-0:00" android:layout_toRightOf="@id/playerProgressMin" android:layout_alignBottom="@id/currentPosMin" android:layout_alignParentEnd="false" />
+    </RelativeLayout>
+</FrameLayout>

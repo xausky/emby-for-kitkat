@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:padding="2.0sp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="118.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="right" android:id="@id/channelNumber" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0sp" android:layout_marginRight="3.0sp" android:maxLines="1" android:layout_centerVertical="true" android:alpha="0.9" android:layout_alignParentStart="true" />
+    <TextView android:textSize="12.0sp" android:gravity="end|center" android:id="@id/channelName" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0sp" android:layout_marginRight="3.0sp" android:maxLines="1" android:layout_centerVertical="true" android:alpha="0.9" android:textAlignment="textEnd" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/channelImage" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:alpha="0.8" android:layout_toEndOf="@id/channelNumber" android:layout_alignParentEnd="true" />
+</RelativeLayout>

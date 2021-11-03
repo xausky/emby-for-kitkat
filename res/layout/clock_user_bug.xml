@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextClock android:textSize="26.0sp" android:textStyle="normal" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:format12Hour="h:mm" android:format24Hour="k:mm" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/userRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/blank10x10" android:layout_below="@id/clock" android:layout_centerHorizontal="true" android:showDividers="middle">
+        <ImageView android:id="@id/userImage" android:layout_width="15.0sp" android:layout_height="15.0sp" android:src="@drawable/user" />
+        <TextView android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User Name" />
+    </LinearLayout>
+</RelativeLayout>

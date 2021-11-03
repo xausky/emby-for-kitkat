@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Stillingar</string>
+    <string name="app_name">Emby</string>
+    <string name="btn_cancel">Hætta við</string>
+    <string name="btn_skip">Sleppa</string>
+    <string name="enter_password">Slá inn lykilorð</string>
+    <string name="error">Villa</string>
+    <string name="error_fragment_message">Villa</string>
+    <string name="home_title">Heim</string>
+    <string name="init_text">00:00</string>
+    <string name="loading">Hleð...</string>
+    <string name="movie">Kvikmynd</string>
+    <string name="ok">Í lagi</string>
+    <string name="oops">Úps</string>
+    <string name="pause">Hlé</string>
+    <string name="play">Spila</string>
+    <string name="pref_enable_hls_label">Virkja \"HLS\" streymi</string>
+    <string name="pref_prompt_pw">Biðja um lykilorð</string>
+    <string name="search_results">Leitarniðurstöður</string>
+    <string name="settings_title">Stillingar</string>
+    <string name="stop">Stöðva</string>
+    <string name="title_activity_dpad_pw">Slá inn lykilorð</string>
+    <string name="txt_loading">Hleð...</string>
+    <string name="txt_signinconnect">Innskráning með \"Connect\"</string>
+</resources>

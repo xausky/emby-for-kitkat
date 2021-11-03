@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/controllers" android:background="@drawable/player_bg_gradient_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/videoView" android:layout_alignTop="@id/videoView" android:layout_alignRight="@id/videoView" android:layout_alignBottom="@id/videoView" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/playpause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_playcontrol_normal" android:layout_alignParentLeft="true" android:contentDescription="@id/play_pause_description" />
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/startText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@id/init_text" android:maxLines="1" android:layout_toRightOf="@id/playpause" />
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/endText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:text="@id/init_text" android:maxLines="1" android:layout_alignParentRight="true" />
+            <SeekBar android:layout_gravity="center" android:id="@id/seekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/endText" android:layout_toRightOf="@id/startText" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cellBody" android:background="@color/black_transparent_very_light" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/contdIndicator" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="fill_parent" android:src="@drawable/prev" android:scaleType="fitXY" android:alpha="0.1" android:layout_marginStart="-10.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="17.0sp" android:ellipsize="end" android:id="@id/programName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:maxLines="1" android:layout_alignParentTop="true" android:layout_marginEnd="10.0dip" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/infoRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/programName" android:layout_alignTop="@id/programName" android:layout_alignBottom="@id/programName" />
+        <ImageView android:id="@id/recIndicator" android:layout_width="15.0dip" android:layout_height="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

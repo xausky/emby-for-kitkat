@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_color_choice_values">
+        <item>\#082804</item>
+        <item>\#43A047</item>
+        <item>\#009688</item>
+        <item>\#141A5E</item>
+        <item>\#2A3476</item>
+        <item>\#01679F</item>
+        <item>\#68228B</item>
+        <item>\#450000</item>
+        <item>\#9A0303</item>
+        <item>\#902222</item>
+        <item>\#AE5D01</item>
+        <item>\#AA821F</item>
+        <item>\#f70d1013</item>
+        <item>\#333333</item>
+        <item>\#e7041004</item>
+    </string-array>
+    <string-array name="pref_audio_options">
+        <item>@string/lbl_auto</item>
+        <item>@string/pref_audio_compat</item>
+    </string-array>
+    <string-array name="pref_audio_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pref_bitrate_entries">
+        <item>Auto</item>
+        <item>100 Mbits/sec</item>
+        <item>80 Mbits/sec</item>
+        <item>70 Mbits/sec</item>
+        <item>60 Mbits/sec</item>
+        <item>50 Mbits/sec</item>
+        <item>40 Mbits/sec</item>
+        <item>30 Mbits/sec</item>
+        <item>21 Mbits/sec</item>
+        <item>15 Mbits/sec</item>
+        <item>10 Mbits/sec</item>
+        <item>5 Mbits/sec</item>
+        <item>3 Mbits/sec</item>
+        <item>2 Mbits/sec</item>
+        <item>1.5 Mbits/sec</item>
+        <item>1 Mbit/sec</item>
+        <item>720 Kbits/sec</item>
+        <item>420 Kbits/sec</item>
+        <item>240 Kbits/sec</item>
+    </string-array>
+    <string-array name="pref_bitrate_values">
+        <item>0</item>
+        <item>110</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>21</item>
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1.5</item>
+        <item>1</item>
+        <item>0.72</item>
+        <item>0.42</item>
+        <item>0.24</item>
+    </string-array>
+    <string-array name="pref_buffer_entries">
+        <item>60 seconds</item>
+        <item>50 seconds</item>
+        <item>40 seconds</item>
+        <item>30 seconds</item>
+        <item>20 seconds</item>
+        <item>15 seconds</item>
+        <item>10 seconds</item>
+        <item>7 seconds</item>
+        <item>5 seconds</item>
+        <item>3 seconds</item>
+        <item>1 second</item>
+        <item>0.6 seconds</item>
+    </string-array>
+    <string-array name="pref_buffer_values">
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>15</item>
+        <item>10</item>
+        <item>7</item>
+        <item>5</item>
+        <item>3</item>
+        <item>1</item>
+        <item>0.6</item>
+    </string-array>
+    <string-array name="pref_fast_normal_slow_start_entries">
+        <item>@string/lbl_fast_tv_start</item>
+        <item>@string/lbl_normal</item>
+        <item>@string/lbl_slow_tv_start</item>
+    </string-array>
+    <string-array name="pref_focus_color_entries">
+        <item>@string/lbl_theme_default</item>
+        <item>@string/lbl_neutral</item>
+    </string-array>
+    <string-array name="pref_focus_color_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pref_preroll_options">
+        <item>@string/lbl_none</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+    <string-array name="pref_preroll_values">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="pref_skip_options">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>20 seconds</item>
+        <item>25 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+    </string-array>
+    <string-array name="pref_skip_values">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>60000</item>
+    </string-array>
+    <string-array name="pref_sm_med_lg_entries">
+        <item>@string/lbl_small</item>
+        <item>@string/lbl_medium_dont_change</item>
+        <item>@string/lbl_large</item>
+    </string-array>
+    <string-array name="pref_startup_entries">
+        <item>@string/pref_show_login</item>
+        <item>@string/pref_auto_login</item>
+        <item>@string/pref_remember_last</item>
+    </string-array>
+    <string-array name="pref_startup_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_theme_entries">
+        <item>@string/pref_theme_default</item>
+        <item>@string/pref_theme_light</item>
+        <item>@string/pref_theme_wmc</item>
+        <item>@string/pref_theme_br</item>
+        <item>@string/pref_theme_classic</item>
+        <item>@string/pref_theme_material_green</item>
+        <item>@string/pref_theme_material_cyan</item>
+        <item>@string/pref_theme_teal</item>
+        <item>@string/pref_theme_slate</item>
+        <item>@string/pref_theme_halloween</item>
+        <item>@string/pref_theme_holidays</item>
+    </string-array>
+    <string-array name="pref_theme_values">
+        <item>default</item>
+        <item>light</item>
+        <item>wmc</item>
+        <item>matblue</item>
+        <item>classic</item>
+        <item>matgreen</item>
+        <item>matcyan</item>
+        <item>teal</item>
+        <item>slate</item>
+        <item>halloween</item>
+        <item>holidays</item>
+    </string-array>
+    <string-array name="pref_three_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_timeout_entries">
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>3 Hours</item>
+        <item>6 Hours</item>
+        <item>24 Hours</item>
+        <item>@string/lbl_never</item>
+    </string-array>
+    <string-array name="pref_timeout_values">
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>10800000</item>
+        <item>21600000</item>
+        <item>86400000</item>
+        <item>0</item>
+    </string-array>
+</resources>

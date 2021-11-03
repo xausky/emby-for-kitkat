@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dpaddesc" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="32.0sp" android:id="@id/dpad_pw_text" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_password" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView7" android:paddingLeft="30.0sp" android:paddingRight="30.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0dip" android:text="@string/dpad_entry_desc" android:layout_below="@id/dpad_pw_text" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView8" android:paddingLeft="30.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0sp" android:maxWidth="450.0sp" android:text="@string/dpad_pw_cancel" android:layout_alignParentBottom="true" android:layout_alignStart="@id/imageView8" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="72.0sp" android:textStyle="bold" android:id="@id/dpad_pw_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000" android:password="true" android:layout_centerVertical="true" android:layout_marginStart="125.0dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

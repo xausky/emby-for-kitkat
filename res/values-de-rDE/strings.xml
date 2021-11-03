@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emby</string>
+    <string name="error">Fehler</string>
+    <string name="init_text">00:00</string>
+    <string name="lbl_3d">3D</string>
+    <string name="lbl_4k">4K</string>
+    <string name="lbl_gray">Grau</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_music_videos">Musikvideo</string>
+    <string name="lbl_playback_error_q">Wiedergabe Fehler?</string>
+    <string name="lbl_resolution">Auflösung:</string>
+    <string name="lbl_stats_for_nerds">Statistiken für Nerds</string>
+    <string name="lbl_switch_to_n">Wechseln zu %s</string>
+    <string name="lbl_switch_user">Benutzer wechseln</string>
+    <string name="lbl_white">Weiß</string>
+    <string name="lbl_yellow">Gelb</string>
+    <string name="loading">Laden...</string>
+    <string name="movie">Film</string>
+    <string name="msg_download_x">Download %s?</string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="preferences">EINSTELLUNGEN</string>
+    <string name="stop">Stopp</string>
+</resources>

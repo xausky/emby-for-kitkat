@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/fastlane_wmc_end" android:endColor="#361e1e68" android:angle="0.0" android:centerX="0.8" />
+</shape>

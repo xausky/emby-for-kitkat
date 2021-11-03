@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dark_gradient" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@android:color/holo_blue_dark" android:id="@id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_display_preferences" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/textView17" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true">
+        <CheckBox android:textSize="16.0sp" android:id="@id/groupCollections" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/GroupItemsIntoCollections" />
+        <TextView android:textSize="12.0sp" android:id="@id/groupCollectionsHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="@string/GroupItemsIntoCollectionsHelp" android:layout_below="@id/groupCollections" />
+        <CheckBox android:textSize="16.0sp" android:id="@id/showTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/lbl_show_labels" android:layout_below="@id/groupCollectionsHelp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/showTitle">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/textView14" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="@string/lbl_image_size" android:maxLines="1" />
+            <Spinner android:id="@id/posterSize" android:background="@drawable/emby_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:spinnerMode="dialog" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/linearLayout2">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/textView16" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="@string/lbl_image_type" android:maxLines="1" />
+            <Spinner android:id="@id/imageType" android:background="@drawable/emby_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:spinnerMode="dialog" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/defaultViewLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/linearLayout3">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/defaultViewLbl" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="@string/lbl_default_view" android:maxLines="1" />
+            <Spinner android:id="@id/initialView" android:background="@drawable/emby_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:spinnerMode="dialog" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textColor="@android:color/white" android:id="@id/btnDone" android:background="@drawable/emby_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/btn_done" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

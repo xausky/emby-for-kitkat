@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wholeRow" android:background="@drawable/focusable_row" android:padding="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/subt" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:gravity="top" android:id="@id/textArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toEndOf="@id/icon">
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/itemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/infoRow" android:layout_width="500.0dip" android:layout_height="20.0dip" android:layout_below="@id/itemName" android:layout_alignLeft="@id/itemName" android:dividerPadding="4.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

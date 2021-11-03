@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Continuing">Fortlaufend</string>
+    <string name="Ended">Beendent</string>
+    <string name="LabelArtists">Artist:</string>
+    <string name="LabelArtistsHelp">Trenn mehreri iisträg dur es ;</string>
+    <string name="LabelContentType">Date Art:</string>
+    <string name="LabelCountry">Land:</string>
+    <string name="LabelLanguage">Sproch:</string>
+    <string name="LabelStatus">Status:</string>
+    <string name="LabelYear">Year:</string>
+    <string name="NewCollectionNameExample">Biispell: Star Wars Sammlig</string>
+    <string name="ParentalRating">Parental Rating</string>
+    <string name="Save">Speichere</string>
+    <string name="SearchForCollectionInternetMetadata">Dursuechs Internet nach Bilder und Metadate</string>
+</resources>

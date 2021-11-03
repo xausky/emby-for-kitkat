@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/default_card_bg" android:padding="10.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/home" android:alpha="0.45" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/search2" android:alpha="0.45" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/middle_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_below="@id/top_items">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/film" android:alpha="0.45" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/suggestion" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/whiteheart" android:alpha="0.45" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/collections" android:alpha="0.45" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/trailer" android:alpha="0.45" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/genrestb" android:alpha="0.45" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:alpha="0.45">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/cog" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/switchuser" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/exit" />
+    </LinearLayout>
+</RelativeLayout>

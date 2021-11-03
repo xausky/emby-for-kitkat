@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.emby.embyatv.ui.BackgroundFrame android:id="@id/backdrop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/imageView11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/moviebg" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:alpha="0.3" />
+    <ImageView android:id="@id/imageView12" android:layout_width="200.0sp" android:layout_height="60.0sp" android:layout_marginLeft="40.0sp" android:layout_marginTop="30.0sp" android:layout_marginRight="40.0sp" android:src="@drawable/logob400" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_marginEnd="37.0dip" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/rows_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="38.0dip" android:layout_below="@id/imageView12" android:layout_centerHorizontal="true" />
+</RelativeLayout>

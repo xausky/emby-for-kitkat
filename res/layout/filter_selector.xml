@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip">
+        <TextView android:textSize="16.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <Spinner android:textSize="14.0sp" android:id="@id/options" android:background="@drawable/emby_button" android:layout_width="350.0dip" android:layout_height="wrap_content" android:spinnerMode="dialog" />
+            <Button android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/btnAddOption" android:background="@drawable/emby_button" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:text="+" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/selectedOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

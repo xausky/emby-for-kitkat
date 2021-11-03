@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/npIcon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/audioicon" />
+    <TextView android:id="@id/npStatus" android:layout_width="60.0sp" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/npIcon" android:layout_alignParentBottom="false" android:layout_alignParentStart="false" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/npDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp" android:maxLines="1" android:layout_below="@id/npIcon" android:layout_alignLeft="@id/npIcon" android:layout_alignRight="@id/npStatus" android:layout_alignParentBottom="false" android:layout_alignParentStart="false" />
+</RelativeLayout>

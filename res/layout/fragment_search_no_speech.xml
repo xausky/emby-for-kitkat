@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/moviebg" android:scaleType="centerCrop" />
+    <EditText android:enabled="true" android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/searchField" android:background="@color/default_background" android:padding="2.0sp" android:paddingLeft="10.0sp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="95.0dip" android:minWidth="400.0sp" android:minHeight="30.0sp" android:hint="@string/lbl_search_hint" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/emptyFrame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/searchField" />
+    <ImageView android:id="@id/imageView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0sp" android:src="@drawable/lb_ic_in_app_search" android:layout_alignBottom="@id/searchField" android:layout_toStartOf="@id/searchField" />
+</RelativeLayout>

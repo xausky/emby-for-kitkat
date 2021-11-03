@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="preference_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:key="pref_login_category">
+        <ListPreference android:entries="@array/pref_startup_entries" android:title="@string/pref_login_behavior_title" android:key="pref_login_behavior" android:defaultValue="2" android:entryValues="@array/pref_startup_values" />
+        <CheckBoxPreference android:title="@string/pref_prompt_pw" android:key="pref_auto_pw_prompt" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_alt_pw_entry" android:key="pref_alt_pw_entry" android:summary="@string/pref_alt_pw_entry_desc" android:defaultValue="false" />
+        <ListPreference android:entries="@array/pref_timeout_entries" android:title="@string/pref_auto_logoff_title" android:key="pref_auto_logoff_timeout" android:defaultValue="3600000" android:entryValues="@array/pref_timeout_values" />
+        <CheckBoxPreference android:title="@string/pref_live_tv_mode" android:key="pref_live_tv_mode" android:summary="@string/pref_live_tv_mode_desc" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="pref_general_category">
+        <ListPreference android:entries="@array/pref_theme_entries" android:title="@string/pref_display_theme_title" android:key="pref_display_theme" android:defaultValue="@string/pref_theme_default" android:entryValues="@array/pref_theme_values" />
+        <CheckBoxPreference android:title="@string/lbl_enable_seasonal_themes" android:key="pref_enable_themes" android:summary="@string/desc_seasonal_themes" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_show_backdrop" android:key="pref_show_backdrop" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_show_focusrect" android:key="pref_show_focusrect" android:defaultValue="true" />
+        <ListPreference android:entries="@array/pref_focus_color_entries" android:title="@string/lbl_focusrect_color" android:key="pref_focusrect_color" android:defaultValue="0" android:entryValues="@array/pref_focus_color_values" />
+        <CheckBoxPreference android:title="@string/lbl_use_cards" android:key="pref_use_cards" android:summary="@string/sum_use_cards" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_enable_theme_songs" android:key="pref_enable_theme_songs" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_enhanced_home_screen" android:key="pref_enable_info_panel" android:summary="@string/desc_info_panel" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_show_premieres" android:key="pref_enable_premieres" android:summary="@string/desc_premieres" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_favor_logo" android:key="pref_favor_logo" android:summary="@string/desc_favor_logo" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_enable_debug" android:key="pref_enable_debug" android:summary="@string/desc_debug" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="pref_playback_category">
+        <ListPreference android:entries="@array/pref_bitrate_entries" android:title="@string/pref_max_bitrate_title" android:key="pref_max_bitrate" android:defaultValue="30" android:entryValues="@array/pref_bitrate_values" />
+        <CheckBoxPreference android:title="@string/lbl_tv_queuing" android:key="pref_enable_tv_queuing" android:summary="@string/sum_tv_queuing" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_pref_up_next" android:key="pref_show_up_next" android:summary="@string/sum_show_up_next" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_preplay_options" android:key="pref_preplay_options" android:summary="@string/sum_preplay_options" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_runaway_prevention" android:key="pref_runaway_prevention" android:summary="@string/sum_runaway_prevention" android:defaultValue="false" />
+        <ListPreference android:entries="@array/pref_preroll_options" android:title="@string/lbl_resume_rewind" android:key="pref_resume_preroll" android:defaultValue="0" android:entryValues="@array/pref_preroll_values" />
+        <CheckBoxPreference android:title="@string/lbl_enable_cinema_mode" android:key="pref_enable_cinema_mode" android:summary="@string/sum_enable_cinema_mode" android:defaultValue="true" />
+        <ListPreference android:entries="@array/pref_audio_options" android:title="@string/lbl_audio_output" android:key="pref_audio_option" android:defaultValue="0" android:entryValues="@array/pref_audio_values" />
+        <CheckBoxPreference android:title="@string/lbl_pref_allow_dts" android:key="pref_allow_dts" android:summary="@string/lbl_pref_allow_dts_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_pref_allow_dts_hd" android:key="pref_allow_dts_hd" android:summary="@string/lbl_pref_allow_dts_hd_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_pref_allow_direct_ts" android:key="pref_allow_direct_ts" android:summary="@string/lbl_pref_allow_direct_ts_summary" android:defaultValue="false" />
+        <ListPreference android:entries="@array/pref_skip_options" android:title="@string/lbl_skip_forward_amount" android:key="pref_skip_fwd" android:defaultValue="30000" android:entryValues="@array/pref_skip_values" />
+        <ListPreference android:entries="@array/pref_skip_options" android:title="@string/lbl_skip_back_amount" android:key="pref_skip_back" android:defaultValue="10000" android:entryValues="@array/pref_skip_values" />
+        <ListPreference android:entries="@array/pref_sm_med_lg_entries" android:title="@string/lbl_pref_buffer_size" android:key="pref_buffer_size" android:defaultValue="1" android:entryValues="@array/pref_three_state_values" />
+        <CheckBoxPreference android:title="@string/lbl_refresh_switching" android:key="pref_refresh_switching" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_resolution_switching" android:key="pref_resolution_switching" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_deinterlace_sd" android:key="pref_convert_interlaced_sd" android:summary="@string/lbl_deinterlace_sd_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_deinterlace_hd" android:key="pref_convert_interlaced_hd" android:summary="@string/lbl_deinterlace_hd_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_use_external_player_videos" android:key="pref_video_use_external" android:summary="@string/lbl_use_external_player_videos_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_pass_direct_path" android:key="pref_send_path_external" android:summary="@string/lbl_direct_path_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="pref_live_tv_category">
+        <CheckBoxPreference android:title="@string/lbl_direct_play_live" android:key="pref_live_direct" android:defaultValue="false" />
+        <ListPreference android:entries="@array/pref_fast_normal_slow_start_entries" android:title="@string/lbl_pref_live_start_time" android:key="pref_live_start_time" android:defaultValue="0" android:entryValues="@array/pref_three_state_values" />
+        <CheckBoxPreference android:title="@string/lbl_direct_stream_copy" android:key="pref_live_copy" android:summary="@string/desc_live_copy" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_pref_live_mpv" android:key="pref_live_mpv" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_pref_rec_mpv" android:key="pref_rec_mpv" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lbl_pref_live_cc" android:key="pref_live_cc" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/lbl_use_external_player_live" android:key="pref_live_tv_use_external" android:summary="@string/lbl_external_player_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="pref_sub_audio_category">
+        <CheckBoxPreference android:title="@string/lbl_burn_ssa" android:key="pref_burn_ssa" android:summary="@string/desc_burn_ssa" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
