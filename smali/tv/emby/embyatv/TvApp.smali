@@ -1,5 +1,5 @@
 .class public Ltv/emby/embyatv/TvApp;
-.super Landroid/app/Application;
+.super Landroidx/multidex/MultiDexApplication;
 .source "TvApp.java"
 
 # interfaces
@@ -189,7 +189,7 @@
     .locals 3
 
     .line 76
-    invoke-direct {p0}, Landroid/app/Application;-><init>()V
+    invoke-direct {p0}, Landroidx/multidex/MultiDexApplication;-><init>()V
 
     const v0, 0x1406f40
 
@@ -2198,7 +2198,7 @@
     .locals 5
 
     .line 158
-    invoke-super {p0}, Landroid/app/Application;->onCreate()V
+    invoke-super {p0}, Landroidx/multidex/MultiDexApplication;->onCreate()V
 
     .line 159
     new-instance v0, Lmediabrowser/logging/ConsoleLogger;
